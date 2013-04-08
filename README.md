@@ -30,10 +30,10 @@ var http = require("http");
 http.createServer(function(req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   nyanStream().nyan().pipe(res);
-}).listen(1337);
+}).listen(8080);
 ```
 
-    wget -q -O - http://localhost:1337
+    wget -q -O - http://localhost:8080
 
 
 Thanks to https://github.com/klange/nyancat
