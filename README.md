@@ -21,7 +21,7 @@ net.createServer(function(socket) {
   nyanStream().nyan().pipe(socket);
 }).listen(1337);
 ```
-    nc localhost 1337
+    telnet localhost 1337
 
 http
 
