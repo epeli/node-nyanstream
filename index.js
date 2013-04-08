@@ -1,7 +1,7 @@
 var fs = require("fs");
 var stream = require("stream");
 
-var catFrames = fs.readFileSync("./nyan.data").toString().split("END");
+var catFrames = fs.readFileSync(__dirname + "/nyan.data").toString().split("END");
 
 module.exports = function() {
     var pt = new stream.PassThrough();
