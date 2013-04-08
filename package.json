@@ -1,6 +1,6 @@
 {
   "name": "nyanstream",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "npm install nyanstream",
   "main": "index.js",
   "scripts": {
