@@ -1,22 +1,37 @@
 
 # Nyancat stream for node.js
 
-    npm install nyancat-stream
+    npm install nyanstream
 
 stdout
 
     node
-    > var cat = require("nyancat-stream");
-    > cat().pipe(process.stdout);
+    > var nyanStream = require("nyanstream");
+    > var cat = nyanStream();
+    > cat.pipe(process.stdout);
     > cat.nyan();
 
 tcp
 
     node
-    > var cat = require("nyancat-stream");
+    > var nyanStream = require("nyanstream");
     > var net = require("net");
     > net.createServer(function(socket) {
-    >   cat().nyan().pipe(socket);
+    >   nyanStream().nyan().pipe(socket);
     > }).listen(1337);
+
+    nc localhost 1337
+
+http
+
+    node
+    > var nyanStream = require("nyanstream");
+    > var http = require("http");
+    > http.createServer(function(req, res) {
+    >   res.writeHead(200, {'Content-Type': 'text/plain'});
+    >   nyanStream().nyan().pipe(res);
+    > }).listen(1337);
+
+    curl http://localhost:1337
 
 Thanks to https://github.com/klange/nyancat
