@@ -1,4 +1,3 @@
-
 # Nyancat stream for node.js
 
     npm install nyanstream
@@ -34,7 +33,7 @@ http.createServer(function(req, res) {
 }).listen(1337);
 ```
 
-    curl http://localhost:1337
+    wget -q -O - http://localhost:1337
 
 
 Thanks to https://github.com/klange/nyancat
