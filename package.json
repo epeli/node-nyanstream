@@ -1,0 +1,17 @@
+{
+  "name": "nyanstream",
+  "version": "0.1.0",
+  "description": "npm install nyanstream",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/epeli/node-nyanstream.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "7fb4ef1c1e643beca5355565ce8f08bfe9a65534"
+}
