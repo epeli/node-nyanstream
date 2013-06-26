@@ -12,6 +12,10 @@ module.exports = function() {
     function nyan() {
         var frame =  clearScreen + catFrames[i % catFrames.length];
         i++;
+        
+        // pt.write returns false if the underlying buffer if full. 
+        // If that case we must wait for the drain event to be able
+        // to write again.
         if (pt.write(frame)) {
             setTimeout(nyan, 100);
         }
