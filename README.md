@@ -1,5 +1,7 @@
 # Nyancat stream for node.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/epeli/node-nyanstream.svg)](https://greenkeeper.io/)
+
     npm install nyanstream
 
 stdout
